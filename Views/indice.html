@@ -1,0 +1,114 @@
+<div class="card idiomas-administrables">
+    <h2>Idiomas disponibles</h2>
+
+    <div class="caja-idiomas">
+        {lista-idiomas}
+    </div>
+
+
+
+</div>
+
+<div class="card caja-form-nueva-palabra">
+    <h2>Agregar nueva palabra <span class="icon-toggle ion-chevron-down"></span></h2>
+
+    <form class="form form-agregar-palabra" action="./?controlador=PalabrasController&accion=guardar" method="POST">
+    
+        <div class="form-element">
+
+            <label for="">Tipo de palabra <a href="./?controlador=InterfazController&accion=tipos" class="btn btn-info" title="Ver descripción de los tipos"><span class="ion-help-circled"></span></a></label>
+            <select name="tipo">
+                {tipos}
+            </select>
+        </div>
+
+        <div>
+            <div class="form-columna">
+                <div class="form-element">
+                    <label for="">Idioma de origen</label>
+                    <select name="idioma-origen">
+                        {idiomas}
+                    </select>
+                </div>
+            </div>
+            <div class="form-columna">
+                <div class="form-element">
+                    <label for="">Palabra origen</label>
+                    <input type="text" name="palabra-origen" autocomplete="off" required>
+                    <div class="teclado-simbolos-origen">
+                        <!-- Contenido dinamico -->
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div>
+            <div class="form-columna">
+                <div class="form-element">
+                    <label for="">Idioma de traducción</label>
+                    <select name="idioma-traduccion">
+                        {idiomas}
+                    </select>
+                </div>
+            </div>
+            <div class="form-columna">
+                <div class="form-element">
+                    <label for="">Palabra traducida</label>
+                    <input type="text" name="palabra-traducida" autocomplete="off" required>
+                    <div class="teclado-simbolos-traduccion">
+                        <!-- Contenido dinamico -->
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="form-element">
+            <input class="btn btn-azul" type="submit" value="Guardar">
+        </div>
+    
+    </form>
+
+    <div class="loader-guardar-palabra">
+        <span class="ion-load-c"></span>
+    </div>
+</div>
+
+<div class="card">
+
+    <h2>Indice de palabras <a href="./?controlador=InterfazController&accion=palabras" class="btn-ver-lista-palabras">Ver todas</a></h2>
+
+    <form class="form form-buscar-palabra" action="./?controlador=PalabrasController&accion=buscar" method="POST">
+        <div class="form-element">
+            <input type="text" name="buscar-palabra" placeholder="Buscar palabra" autocomplete="off">
+        </div>
+    </form>
+
+    <div class="loader-busqueda">
+        <span class="ion-load-c"></span>
+    </div>
+
+    <div class="contenedor-resultado-busqueda">
+
+    </div>
+
+</div>
+
+<div class="fondo-composicion-idioma animate__animated">
+    <div class="caja-composicion">
+        <h2><!--Nombre del idioma--></h2>
+        <p>En este idioma las frases se componen de la siguiente forma:</p>
+
+        <div class="lista-orden-idioma contenedor-ordenable">
+            <!-- Tipos de palabras -->
+        </div>
+
+        <div class="pie-modal">
+            <a href="#" class="btn btn-azul btn-guardar-compo-idioma" data-ididioma="">Guardar</a>
+            <a href="#" class="btn btn-rojo btn-cerrar-compo-idioma">Cancelar</a>
+        </div>
+    </div>
+</div>
+
+<script src="./Public/js/indice-events.js"></script>

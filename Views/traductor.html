@@ -1,0 +1,41 @@
+
+<div class="traductor">
+    <div class="contenedor-traductor">
+        <div class="idiomas-traductor">
+            <a href='#' class="invertir-idiomas"><span class='ion-arrow-swap'></span></a>
+            <div class="idioma-izquierda">
+                <select name='seleccionar-idioma-izquierda' class="s-idioma-izquierda">
+                    {idiomas}
+                </select>
+            </div>
+            <div class="idioma-derecha">
+                <select name='seleccionar-idioma-derecha' class="s-idioma-derecha">
+                    {idiomasDestino}
+                </select>
+            </div>
+        </div>
+        <div class="area-traductor">
+
+           <div class="contenedor-escritura">
+                <div class="cont-textarea">
+                    <textarea class="textarea-traducir"></textarea>
+                </div>
+                <div class="contador-texto contador-izquierdo">0 / limite</div>
+           </div>
+
+           <div class="contenedor-escritura">
+                <div class="cont-textarea">
+                    <div class="area-resultado-traduccion">
+                        <span class="no-traduccion">¡ Hora de traducir !</span>
+                    </div>
+                </div>
+                <div class="contador-texto"></div>
+           </div>
+
+        </div>
+    </div>
+</div>
+
+<span class="tooltip-traductor"><!-- Contenido dinamico--></span>
+
+<script src="./Public/js/traductor-events.js"></script>

@@ -1,0 +1,48 @@
+
+<style>
+    .T1{
+        background-color: bisque;
+        text-align: center;
+        margin: 1em 0;
+    }
+    .T2{
+        background-color: burlywood;
+
+    }
+    .T3{
+        margin-top: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 0.5em;
+    }
+    .P1{
+        margin: 0.5em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .L1{
+        margin-left: 1em;
+    }
+    
+</style>
+
+    <div class="card" ng-controller="controlador">
+
+        <input type="text" id="texto-cargar" ng-model="texto" ng-keyup="buscar($event)" > <hr>
+        <!-- <input type="text" ng-model="inicio">
+        <input type="text" ng-model="final"> -->
+        <!-- <a href="#" ng-click="cargar_datos()">Click</a> -->
+
+        <div ng-repeat="fila in informacion" ng-class="fila.tipo">
+               <h1 ng-if="fila.tipo == 'T1'">{{fila.texto}}</h1>
+               <h2 ng-if="fila.tipo == 'T2'">{{fila.texto}}</h2>
+               <h3 ng-if="fila.tipo == 'T3'">{{fila.texto}}</h3>
+               <p ng-if="fila.tipo == 'P1'">{{fila.texto}}</p>
+               <li ng-if="fila.tipo == 'L1'">{{fila.texto}}</li>
+               <img ng-if="fila.tipo == 'IM'" [src]="fila.texto">
+
+               
+        </div>
+
+      
+
+    </div>
+    

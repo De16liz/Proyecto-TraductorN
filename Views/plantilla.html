@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-app="apptraductor" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Public/img/favicon.png" type="image/png">
+    
+    <!-- Este es el escrip del angular -->
+    <script src="./angular/angular.min.js"></script>
+    <script src="./angular/operaciones.js"></script>
+
+
+    <title>Traductor Nativo</title>
+
+    <link rel="stylesheet" href="./Public/css/normalize.css">
+    <link rel="stylesheet" href="./Public/css/styles.css">
+    <link rel="stylesheet" href="./Public/css/animate.min.css">
+    
+    <!-- Cargamos la fuente Roboto de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+    <!-- Cargamos las fuentes de iconos -->
+    <link rel="stylesheet" href="./Public/css/ionicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-app">
+            TRADUCTOR NATIVO
+        </div>
+        <div class="menu-principal">
+            <a href="./">Traductor</a>
+            <a href="./?controlador=InterfazController&accion=indice">Indice</a>
+            <a href="./?controlador=InterfazController&accion=acerca">Acerca de</a>
+            <a href="./?controlador=InterfazController&accion=informe">Informe</a>
+            {btn-login}
+        </div>
+        <div class="clear"></div>
+    </header>
+    <div class="app">
+
+    {contenido}
+
+    </div>
+    
+
+    <div class="fondo-login animate__animated">
+        <div class="caja-login">
+            <h2>Acceso</h2>
+
+            <form class="form form-ingresar" action="./?controlador=UsuarioController&accion=ingresar" method="POST">
+            
+                <div class="form-element">
+                    <label for="">Usuario</label>
+                    <input type="text" name="usuario" autocomplete="off" required>
+                </div>
+
+                <div class="form-element">
+                    <label for="">Contraseña</label>
+                    <input type="password" name="contrasena" autocomplete="off" required>
+                </div>
+
+                <div class="form-columna">
+                    <div class="form-element">
+                        <input class="btn btn-azul" type="submit" value="Ingresar">
+                    </div>
+                </div>
+                <div class="form-columna">
+                    <div class="form-element">
+                        <input class="btn btn-rojo cerrar-login" type="reset" value="Cancelar">
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        © 2021 Copyright - Todos los derechos reservados.
+    </footer>
+
+    <script src="./Public/js/jquery-3.6.0.min.js"></script>
+    <script src="./Public/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="./Public/js/functions.js"></script>
+    <script src="./Public/js/general-events.js"></script>
+</body>
+</html>
