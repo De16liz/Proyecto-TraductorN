@@ -1004,7 +1004,7 @@ INSERT INTO tb_informe (id, tipo, dependencia, texto) VALUES
 (27, 'P1', 'D51', 'Si presentan inconsistencias del software, se podrá realizar una restauración del contenido para reparar las anomalías.'),
 (28, 'T2', 'D511', 'MIGRACIONES'),
 (29, 'P1', 'D511', 'Esta parte es muy sencilla debido a que ya está alojada en un servidor web, si desea migrar a otro equipo, solo debe ingresar al servidor, iniciando sesión y podrá acceder automáticamente al traductor.'),
-(30, 'P1', 'D511', 'Adicional a esto dejaremos una copia de la base de datos en el siguiente enlace:'),
+(30, 'P1', 'D511', 'Adicional a esto dejaremos una copia de la base de datos en el siguiente enlace: https://github.com/De16liz/BD-Traductor-Nativo'),
 (31, 'P1', 'D511', 'Esto con el fin de que tenga acceso a la base de datos, en caso tal, de que se presente alguna anomalía o perdida total de la información del software. '),
 (32, 'T1', 'D6', 'ACCESIBILIDAD, USABILIDAD Y LICENCIAMIENTO.'),
 (33, 'P1', 'D61', 'Toda imagen usada por el traductor, es de autoría de una de las creadoras del software'),
