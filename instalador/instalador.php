@@ -10,8 +10,7 @@
 <body style="display: flex; justify-content: center;">
     
     <form style="color: white;" action="ejecutar-instalador.php" method="POST">
-    <p>descarge el </p><a href="../PDF/Traductor-manual de usuario.pdf" style="color: white">Manual de usuario</a>   
-    <h1>Instalador de la APP</h1>
+        <h1>Instalador de la APP</h1>
         A continuaci&oacute;n se proceder&aacute; a instalar el Traductor.<br>
 		Sin embargo requiere de que la <strong>base de datos</strong> sea creada con anterioridad. <br><br>
 

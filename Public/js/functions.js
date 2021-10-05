@@ -38,7 +38,7 @@ function toast(mensaje){
 
 function generarTecladoSimbolos(objetivo, cajaTeclado){
 
-    let simbolos = 'ÃĀằãāĪĩīÕõṍŨṹũ';
+    let simbolos = 'ÃĀằãāéĪĩīÕõṍŨṹũ';
 
     let html = "";
 
