@@ -146,6 +146,18 @@ class InterfazController{
         echo $plantilla;
     }
 
+    public static function contacto(){
+        
+
+        $plantilla = self::cargaPlantilla();
+        $contacto = self::cargaVista('contacto');
+
+        //incluimos el contenido en la plantilla
+        $plantilla = str_replace('{contenido}', $contacto, $plantilla);
+
+        //mostramos la vista completa
+        echo $plantilla;
+    }
     public static function palabras(){
 
         $plantilla = self::cargaPlantilla();
