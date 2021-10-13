@@ -1,0 +1,64 @@
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.btn-menu{
+    display: none;
+}
+.item-cerrar{
+    display: none;
+
+}
+@media screen and (max-width: 1010px) {
+    header{
+
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .logo-app{
+        width: 100%;
+    }
+    .menu-principal{
+        display: none;
+
+    }
+.menu-opciones{
+    border-radius: 8px;
+    box-shadow: 1px 2px 2px 1px rgba(195, 211, 241, 0.733);
+    padding: 1em;
+    background: black;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+    .menu-show
+    {
+
+        
+        display: flex;
+        justify-content: center;
+        background-color: rgba(65, 64, 64, 0.869);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+
+
+    }
+    
+    .menu-show .item-cerrar{
+        display: flex;
+        align-items: center;
+        margin: 8px 5px;
+    }
+    .btn-menu{
+        display: block;
+    }
+}

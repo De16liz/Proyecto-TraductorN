@@ -89,10 +89,12 @@ nav {
 }
 
 .menu-principal{
-    width: calc(100% - 300px);
+    display: flex;
+    align-items: center;
+    /* width: calc(100% - 300px);
     text-align: right;
     line-height: 80px;
-    padding-right: 70px;
+    padding-right: 70px; */
 }
 
 .menu-principal a{
@@ -109,21 +111,49 @@ nav {
 }
 
 footer {
+    
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 70px;
     padding: 12px 20%;
     color: white;
-    text-align: center;
+    
+    background-color: #00000079;
+    
+}
+.texto{
+    /* position:absolute; */
+    /* top:6px;*/
+    left:5%; 
+    width:200px;
+    /* margin-top:10px; */
+    flex: 1;
+    min-width: 250px;
+    /* background-color: red; */
+}
+
+.correo{
+    flex: 2px;
+    padding:0px;
+    /* margin-left:60%;
+    margin-right:20px;
+    margin-top:8px;*/
+    /* margin-bottom: 0px; */
+    margin: 2px; 
+    /* background-color: green; */
 }
 
 footer hr{
     border: 1px solid #ffffff63;
-    margin: 0 0 7px 0;
+    margin: 0 0 5px 0;
 }
 
 .app{
+    
+    margin: 1em 0;
     position: relative;
     width: 100%;
     height: calc(100% - 140px);
@@ -711,7 +741,7 @@ footer hr{
 
 
 @media only screen and (max-width: 768px){
-    
+/*     
     .logo-app{
         float: none;
         width: 100%;
@@ -726,7 +756,7 @@ footer hr{
         line-height: 40px;
         text-align: center;
         padding: 0;
-    }
+    } */
     
     .card{
         width: 100%;
