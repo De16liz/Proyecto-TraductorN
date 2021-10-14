@@ -4,14 +4,16 @@ header{
     align-items: center;
     gap: 10px;
     color: white;
+    cursor: pointer;
 }
 
 .btn-menu{
     display: none;
+    cursor: pointer;
 }
 .item-cerrar{
     display: none;
-
+    cursor: pointer;
 }
 @media screen and (max-width: 1010px) {
     header{
@@ -30,7 +32,7 @@ header{
 .menu-opciones{
     border-radius: 8px;
     box-shadow: 1px 2px 2px 1px rgba(195, 211, 241, 0.733);
-    padding: 1em;
+    padding: 2em;
     background: black;
     display: flex;
     gap: 5px;

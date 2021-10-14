@@ -1011,7 +1011,7 @@ INSERT INTO tb_informe (id, tipo, dependencia, texto) VALUES
 (34, 'T2', 'D611', 'LICENCIA'),
 (35, 'P1', 'D612', 'El copyright representa los derechos de autor que se le conceden a las creadoras del proyecto Traductor Nativo'),
 (36, 'T1', 'D7', 'FORTALEZAS'),
-(37, 'P1', 'D71', 'Desde los inicios de este proyecto, siempre se tuvo claro el tema central, enfocándonos en una de las necesidades que presenta la etnia indígena de panore en San José del Guaviare.'),
+(37, 'P1', 'D71', 'Desde los inicios de este proyecto, siempre se tuvo claro el tema central, enfocándonos en una de las necesidades que presenta la etnia indígena de Panure en San José del Guaviare.'),
 (38, 'P1', 'D71', 'Además de que una de las organizadoras y creadoras del proyecto es perteneciente de la etnia y tiene conocimiento de la lengua.'),
 (39, 'P1', 'D71', 'Durante el proceso de este producto, se afianzaron temas y conocimientos, esto nos permitió realizar mejorías para un mejor desarrollo de nuestro proyecto, dando como resultado un excelente proceso y un terminado completo.'),
 (40, 'T1', 'D8', 'DEBILIDADES'),

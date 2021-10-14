@@ -78,6 +78,9 @@ nav {
 .menu-principal{
     float: left;
     height: 100%;
+    text-decoration: none;
+    color: #ffefef;
+    display: inline-block;
 }
 
 .logo-app{
@@ -86,6 +89,7 @@ nav {
     line-height: 80px;
     color: white;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .menu-principal{
