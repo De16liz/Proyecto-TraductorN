@@ -158,6 +158,19 @@ class InterfazController{
         //mostramos la vista completa
         echo $plantilla;
     }
+
+    public static function terminos(){
+        
+
+        $plantilla = self::cargaPlantilla();
+        $terminos = self::cargaVista('terminos');
+
+        //incluimos el contenido en la plantilla
+        $plantilla = str_replace('{contenido}', $terminos, $plantilla);
+
+        //mostramos la vista completa
+        echo $plantilla;
+    }
     public static function palabras(){
 
         $plantilla = self::cargaPlantilla();
